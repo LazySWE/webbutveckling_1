@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Nuclear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=nippo@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../lightbox2-2.11.4/dist/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body>
+
+
+    <!-- Lightmode button -->
+    <button id="lightmode_button" onclick="myFunction()"><img src="lightbulb.png" alt=""></button>
+
+    <!-- SCROLL TO TOP  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow-up-svgrepo-com.svg" alt=""></button>
+    <div class="bg">
+    <div class="nav2"></div>
+        <nav>
+            <!--Hamburgarmeny sidebar start-->
+            <ul class="sidebar">
+                <a onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                <a href="#home">Home</a>
+                <a href="#slide3">Reactors</a>
+                <a href="#slide4">Timeline</a>
+            </ul>
+            <!------------------------------->
+
+            <ul class="real-bar">
+                <div class="logo">
+                    <img src="logo.svg" alt="Nuclear Power logo">
+                </div>
+                <div class="links">
+                    <a class="hideOnMobile" href="#slide2">Reactor</a>
+                    <a class="hideOnMobile" href="#slide3">SMR</a>
+                    <a class="hideOnMobile" href="#slide4">Timeline</a>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <p class="header_txt">Go Nuclear!</p>
+
+        <a href="#slide2" onclick="slowScrollTo('#slide2', 300); return false;"><div class="arrow">
+            <span></span>
+            <span></span>
+        </div></a>
+    </div>
+
+    <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        </svg>
+    </div>
+
+
+
+
+<div class="slide2" id="slide2">
+    
+
+    <div class="left-box">
+        <a href="video-nuclear.mp4" class="glightbox" data-title="Nuclear Fission Process" data-description="A detailed look at reactor activity">
+            <video src="video-nuclear.mp4" autoplay loop muted playsinline></video>
+        </a>
+    </div>
+
+        <div class="right-box">
+            <p>
+            A nuclear reactor is a system designed to generate energy 
+            by controlling a process called nuclear fission. 
+            </p>
+            <p>
+            In this process, the nucleus of a heavy 
+            atom most commonly uranium-235
+            </p>
+        </div>
+</div>
+<div class="slide3" id="slide3">
+        <div class="left-box2">
+            <p>
+            The vessel in the image is Akademik Lomonosov or the "floating laboratory" and is equiped with a Small Modular Reactor (SMR)
+            </p>
+            <p>
+            While the world has long focused on very big reactors, SMRs may be the future of nuclear power.
+            </p>
+        </div>
+        <div class="right-box2">
+            <a href="smr.png" data-lightbox="gallery" ><img src="smr.png" alt="" ></a>
+        </div>
+</div>
+
+<div class="wave2">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+<!-- timeline header -->
+<div id="slide4"  class="page-wrapper">
+    <div class="section-timeline-heading">
+        <div class="container">
+            <div class="padding-vertical-xlarge">
+                <div class="timeline-main-heading-wrapper">
+                    <div class="margin-bottom-medium">
+                        <h2>Uranium To Electricity</h2>
+                    </div>
+                    <p>Here is a timeline to display the process of how nuclear power produces electricity from uranium</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section-timeline">
+    <div class="container">
+        <div class="timeline_component">
+
+            <!-- black progress bar -->
+            <div class="timeline_progress">
+                <div class="timeline_progress-bar"></div>
+            </div>
+
+            <div class="timeline_item">
+                <div class="timeline_left">
+                    <div class="timeline_date-text">Mine Uranium</div>
+                </div>
+
+                <div class="timeline_center">
+                    <div class="timeline_circle"></div>
+                </div>
+
+                <div class="timeline_right">
+                    <div class="margin-bottom-xlarge">
+                        <div class="timeline_text">
+                            <img class="img1" src="u_excavation.png" alt="Picture of uranium">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+                
+            <div class="timeline_item">
+
+
+                <div class="timeline_right">
+                    <div class="margin-bottom-xlarge">
+                        <div class="timeline_text">
+                            <img class="img2" src="u_235.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline_center">
+                    <div class="timeline_circle"></div>
+                </div>
+
+                <div class="timeline_left">
+                    <div class="timeline_date-text">Uranium Enrichment</div>
+                </div>
+            </div>
+
+
+
+            <div class="timeline_item">
+            <div class="timeline_left">
+                <div class="timeline_date-text">Nuclear fission in the reactor</div>
+            </div>
+
+            <div class="timeline_center">
+                <div class="timeline_circle"></div>
+            </div>
+
+            <div class="timeline_right">
+                <div class="margin-bottom-xlarge">
+                    <div class="timeline_text">
+                        <img class="img3" src="fission.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+            <div class="timeline_item">
+
+                
+                <div class="timeline_right">
+                    <div class="margin-bottom-xlarge">
+                        <div class="timeline_text">
+                            <img class="img4" src="electricity.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline_center">
+                    <div class="timeline_circle"></div>
+                </div>
+
+                <div class="timeline_left">
+                    <div class="timeline_date-text">Heat → steam → spins a turbine → Electricity</div>
+                </div>
+            </div>
+
+
+
+            
+        </div>
+    </div>
+</div>
+<div style="height: 30vh;"></div>
+
+
+
+
+<!-- ADD A FOOTER -->
+<footer>
+    <h1>Lets go Nuclear!</h1>
+</footer>
+
+
+
+<script src="../../lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script src="script.js"></script>
+
+<script type="text/javascript">
+  // This "activates" the lightbox for any element with the class 'glightbox'
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+</script>
+</body>
+</html>

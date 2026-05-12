@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+.kurssida {
+    text-shadow: 5px 5px 3px black;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20vh;
+    color: white;
+    font-weight: 900;
+}
+
+.box{
+    flex: 0 0 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.639);
+    width: 23vw;
+    height: 25vh;
+    border-radius: 5px;
+    border-width: 7px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: x-large;
+}
+
+
+body{
+    background-color: black;
+    background-image: url(Startbakgrund.jpg);
+    background-size: cover;
+    height: 180vh;
+    margin: 0rem;   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel{
+    display: flex;
+    overflow-x:auto ;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+    animation: spin 20s infinite linear;
+    padding-right: 1.5em;
+}
+.group :hover{
+    text-decoration:underline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+
+}
+
+a:hover {
+    color: white;
+}
+
+a:hover .box{
+    border: 6px solid white;
+}
+
+a:hover h1 {
+    color: white;
+}
+
+@keyframes spin {
+    from {translate: 0}
+    to {translate: -100%;}
+}
+
+.uppgifter{
+    gap: 1.5rem;
+    margin-top: 7%;
+    margin-left:0;
+    display: flex;
+}
+
+.titel-sida-2 {
+    text-shadow: 5px 5px 3px black;
+    margin-top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15vh;
+    color: white;
+    font-weight: 900;
+}
+
+.box1{
+    flex: 0 0 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.639);
+    width: 23vw;
+    height: 25vh;
+    border-radius: 5px;
+    border-width: 7px;
+}
+
+.box1:hover {
+    transform: (1.01);
+    text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}

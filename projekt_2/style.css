@@ -1,0 +1,267 @@
+body{
+        margin: 0;
+        background-color: black;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        backdrop-filter: blur(80px);
+        height: 12vh;
+        font-size: 5.5vh;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+    }
+    .navbar a {
+        color: whitesmoke;
+        text-decoration: none;
+        transition: 0.5s;
+        text-shadow: 4px 4px 6px black;
+    }
+    .navbar a :hover {
+        color: darkgray;
+    }
+    .intro a {
+        text-decoration: none;
+    }
+
+    .left_navbar{
+        margin-left:8vw;
+        display: flex;
+    }
+
+    .right_navbar{
+        display: flex;
+        margin-right: 5vw;
+        justify-content: space-evenly;
+        gap: 5vw;
+    }
+
+    .intro{
+        height:100vh;
+        background-color: black;
+        background-image: url(Slide_1_picture.jpg);
+        background-size: cover;
+    }
+
+    .back-text {
+        font-size: 39vh;
+        color:white; 
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        margin:0;
+        text-shadow: 10px 10px 15px black;
+        letter-spacing: 15px;
+        opacity: 25%;
+    }
+
+    .front-text {
+        font-size: 25vh;
+        color: white;
+        position: relative;
+        display:flex;
+        justify-content: center;
+        margin-top:-20vh ;  
+        text-shadow: 4px 4px 6px black;
+   }
+
+    .Gym {
+        margin-top: 15vh ;
+        text-align: center;
+        justify-content: center;
+        text-shadow: 4px 4px 6px #000;
+        color: chartreuse;
+        font-size: 15vw;
+    }
+    .slide2{
+        transition: 200ms ease-in-out;
+        position: relative;
+        display: flex;
+        height: 100vh;
+        overflow:hidden;
+    }
+
+    .bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background-image: url(Slide_2_picture.png);
+        background-size:cover;
+        background-position: center;
+
+        filter: blur(4px);
+        z-index:1; 
+    }
+
+    .bg-txt {
+        display: flex;
+        position:relative;
+        z-index:2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-left: 5vw;
+
+        color: white;
+        font-size: 10vw;
+        margin-top: 5%;
+    }
+
+    .txt{
+        margin-top: -5%;
+    }
+
+    .right-block{
+        position: absolute;
+        right: 10vw;
+        z-index: 9;
+        margin-top: 1vh;
+    }
+    .modal {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border: 1px solid white;
+        border-radius:10px ;
+        z-index: 10;
+        background-color:white;
+        width:500px;
+        height:30vh;
+        max-width: 95%;
+        transition: 200ms ease-in-out;
+    }
+
+    .modal.active {
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 9;
+    }
+
+    .modal-header{
+        position: absolute;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        z-index: 9;
+    }
+    .modal-header .title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        z-index: 9;
+    }
+    .modal-header .close-button{
+        cursor: pointer;
+        border:none;
+        outline: none;
+        background: none;
+        font-size:1.25rem;
+        font-weight: bold;
+        z-index: 9;
+    }
+    .modal-body{
+        padding: 90px 15px;
+        z-index: 9;
+    }
+
+    #overlay{
+        position:fixed;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:rgba(0,0,0,.5);
+        pointer-events: none;
+        z-index: 9;
+    }
+
+    #overlay.active{
+        opacity: 1;
+        pointer-events: all;
+        z-index: 8;
+    }
+
+    button[data-modal-target="#modal1"] {
+        display: block;
+        width: 25vw;
+        height: 13vh;
+
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 15px;
+        border-width: 5px;
+        margin-top: 15%;
+
+        font-size:5vh ;
+        font-weight:bold;
+    }
+    button[data-modal-target="#modal2"] {
+        display: block;
+        width: 25vw;
+        height: 13vh;
+
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 15px;
+        border-width: 5px;
+        margin-top: 15%;
+
+        font-size:5vh ;
+        font-weight:bold;
+    }
+    button[data-modal-target="#modal3"] {
+        display: block;
+        width: 25vw;
+        height: 13vh;
+
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 15px;
+        border-width: 5px;
+        margin-top: 15%;
+
+        font-size:5vh ;
+        font-weight:bold;
+    }
+    button[data-modal-target="#modal4"] {
+        display: block;
+        width: 25vw;
+        height: 13vh;
+
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 15px;
+        border-width: 5px;
+        margin-top: 15%;
+
+        font-size:5vh ;
+        font-weight:bold;
+    }
+    button[data-modal-target="#modal5"] {
+        display: block;
+        width: 25vw;
+        height: 13vh;
+
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 15px;
+        border-width: 5px;
+        margin-top: 15%;
+
+        font-size:5vh ;
+        font-weight:bold;
+    }

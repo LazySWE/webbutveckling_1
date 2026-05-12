@@ -1,0 +1,24 @@
+body{
+    background-color: blueviolet;
+}
+.container {
+    background-color: aqua;
+    width: 40vw;
+    height: 30vh;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        background-color: brown;
+    }
+    h1 {
+        color: aquamarine;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        background-color: black;
+    }
+}

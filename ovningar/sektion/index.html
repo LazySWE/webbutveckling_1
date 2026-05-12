@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sektion uppgift</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+
+<div class="hamburger">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<nav id="navbar">
+    <div class="leftside">
+        <ul>
+            <li><a href="">home</a></li>
+        </ul>
+    </div>
+
+    <div class="rightside">
+        <ul>
+            <li><a href="">slide1</a></li>
+            <li><a href="">slide2</a></li>
+            <li><a href="">slide3</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <h3>Main Page</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsam eaque dolore optio, dolores mollitia ullam sapiente repudiandae! Quis ea natus deleniti nesciunt, mollitia illum! Hic non itaque voluptate delectus!</p>
+</main>
+<script src="script.js"></script>
+
+<script>
+let refreshed = false;
+
+function checkWidth() {
+  const width = window.innerWidth;
+
+  if (width >= 600 && width) {
+    refreshed = true;
+    location.reload();
+  }
+}
+
+window.addEventListener("resize", checkWidth);
+</script>
+</body>
+</html>

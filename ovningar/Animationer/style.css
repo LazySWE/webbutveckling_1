@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+}
+
+.cube{
+    width:200px;
+    height:200px;
+    background-color: yellow;
+    position: absolute;
+    animation: move-cube 5s linear infinite;
+}
+.animation-container{
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+
+}
+@keyframes move-cube{
+    0%{
+        top: 0;
+        left: 0;
+        border-radius: o;
+        background-color: darkblue;
+    }
+    25%{
+        top: 0px;
+        left: 500px;
+        border-radius: 50%;
+        background-color: darkcyan;
+    }
+    50%{
+        top: 300px;
+        left: 500px;
+        border-radius: 50%;
+        background-color: darkgreen;
+    }
+    75%{
+        top: 300px;
+        left: 0px;
+        border-radius: 50%;
+        background-color: cyan;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: lightcyan;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.text {
+    font-size: 35px;
+    color: white;
+    animation: blink 0.5s infinite;
+    text-align: center;
+}
+
+.knopka{
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

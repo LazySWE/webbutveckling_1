@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_box {
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 2%;
+    height: 75px;
+    width: 100vw;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right {
+    gap: clamp(1rem, 5vw, 4rem);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(16px, 2vw, 40px);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(243, 87, 87);
+}
+
+header img {
+    max-height: 50px;
+    width: auto;
+}
+
+.introduction {
+    text-shadow: 3px 3px 5px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("Sledge_background.png");
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    flex-direction: column;
+    padding: 0 2%;
+    z-index: -1;
+}
+
+.TOM_CLANCYS {
+    padding-top: 1vh;
+    color: white;
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+.RAINBOW_6 {
+    color: white;
+    font-size: clamp(50px, 10vw, 100px);
+}
+
+.SIEGE_X {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 61, 45);
+    font-size: clamp(100px, 20vw, 300px);
+    line-height: 1;
+}
+
+.Competitive_FPS_Game {
+    color: white;
+    font-size: clamp(20px, 3vw, 40px);
+}
+
+
+.left_o, .right_o {
+    flex: 1 1 75vh; 
+    max-width: 75vh;
+    height: 75vh;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.left_o img{
+    height: 1000px;
+    width: 1000px;
+    margin-top: -270px;
+    margin-left: -260px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.right_o {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Denari_text {
+    color: rgb(255, 255, 255);
+    font-size: clamp(16px, 2vw, 40px);
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.left-box{
+    color: white;
+    height: 400px;
+    width: 400px;
+    background-image: url(VPLOGO.png);
+    background-size: cover;
+}
+
+.esports_tab{
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+    padding-top:70px;
+}
+
+
+.operator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    animation: gradientMove 5s ease infinite;
+    background-color:black;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.right-box-txt{
+    padding: 30px; 
+}
+.right-box{
+    color: white;
+    background-color: black;
+    height: 420px;
+    width: 550px;
+    text-shadow: 2px 2px 2px black;
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    border-radius: 12px;
+}
+
+.right-box::after{
+    content: '';
+    --angle: 0deg;
+    position: absolute;
+    inset: -6px;
+    z-index: -1;
+    background-image: conic-gradient(
+        from var(--angle),
+        transparent 50%,
+        #ff5a00
+    );
+    border-radius: inherit;
+    animation: spin 3s linear infinite;
+}
+
+.right-box::before{
+    content: '';
+    position: absolute;
+    inset: -10px;
+    background-color: black;
+    filter: blur(1.5rem);
+    z-index: -2;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes spin{
+    from{ --angle:0deg; }
+    to{ --angle:360deg; }
+}
+body{
+    animation: gradientMove 5s ease infinite;
+    background: linear-gradient(280deg,#ff5a00,white,#ff5a00);
+    background-size: 200%;      
+}
+.wave2{
+    margin-top:-0.1%;
+}
+
+.wave{
+    overflow:hidden;
+    position:relative;
+    margin-top: -120px;
+}
+.wave::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 99;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 100% 90px;
+    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" fill="%23000000"/></svg>'); 
+}
+
+@media (min-width:2100px){
+    .wave::before{
+    background-size: 100% calc(2vw + 90px);
+    }
+}
+ 

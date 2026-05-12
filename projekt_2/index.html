@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="javascript.js"></script>
+</head>
+<div id="overlay"></div>
+<body>
+
+    <div class="intro">
+        <div class="navbar"> 
+
+            <div class="left_navbar">
+                <a href="../index.html"><p>Gym</p></a>
+            </div>
+
+            <div class="right_navbar">
+                <a href="#slide2"><p>Fysisk</p></a>
+                <a href="#slide2"><p>Mental</p></a>
+                <a href="#slide2"><p>Tips</p></a>
+            </div>
+        </div >
+
+            <h1 class="back-text" >Gym</h1>
+            <h1 class="front-text">Gym</h1>
+            
+    </div>
+
+    <div class="slide2" id="slide2">
+        <div class="bg-img"></div>
+        <div class="bg-txt">
+            <p data-aos="fade-up" data-aos-duration="1000" class="txt">Benefits</p>
+            <p data-aos="fade-up" data-aos-duration="1000" class="txt">Of</p>
+            <p data-aos="fade-up" data-aos-duration="1000" class="txt">Exercise</p>
+        </div>
+
+        <div class="right-block">
+
+            <button data-aos="fade-up" data-aos-duration="1000" data-modal-target="#modal1">Physical</button>
+            <div class="modal" id="modal1">
+
+                <div class="modal-header">
+                    <div class="title">Physical Health</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    Strengthens your heart, lungs, 
+                    and muscles, and lowers the risk of
+                     diseases like diabetes and high blood 
+                     pressure.
+                </div>
+            </div>
+            
+
+
+            
+            <button data-aos="fade-up" data-aos-duration="1000" data-modal-target="#modal2">Mental</button>
+            <div class="modal" id="modal2">
+
+                <div class="modal-header">
+                    <div class="title">Boosts mental health</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    Increases endorphins, reduces stress, anxiety, and depression, 
+                    and improves overall mood.
+                </div>
+            </div>
+
+
+            <button data-aos="fade-up" data-aos-duration="1000" data-modal-target="#modal3">Sleep</button>
+            <div class="modal" id="modal3">
+
+                <div class="modal-header">
+                    <div class="title">Better sleep quality</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    Helps you fall asleep faster and sleep deeper, making you feel more rested.
+                </div>
+            </div>
+
+            <button data-aos="fade-up" data-aos-duration="1000" data-modal-target="#modal4">Energy</button>
+            <div class="modal" id="modal4">
+
+                <div class="modal-header">
+                    <div class="title">Increases energy levels</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    Regular activity boosts stamina and reduces feelings of fatigue
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+    
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+</html>
