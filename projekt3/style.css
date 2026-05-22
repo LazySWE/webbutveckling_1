@@ -22,8 +22,8 @@
 
 .sidebar a{
     padding-right: 50vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
     padding-left: 5vw;
     font-size: 24px;
     font-family: monospace;
@@ -131,11 +131,13 @@ nav{
     }
 }
 nav a:hover{
+    background-color: rgb(33, 33, 33); 
     color: white;
     border-radius: 10px;
 }
 
 nav img {
+    background-image: url(logo.svg);
     height: 8vh;
     margin-left:4vw ;
 }
@@ -150,7 +152,7 @@ nav img {
 }
 
 .real-bar a{
-    height: 24px;
+    height: 500px;
 }
 .logo {
     width: auto;
@@ -738,7 +740,7 @@ footer h1 {
     color: black;
 }
 .lightmode-navbar img{
-    margin-left:-10.5vw ;
+    margin-left:-2.5vw ;
     background-image: url(white-logo.svg);
     height: 20vh;
     background-size: cover;
