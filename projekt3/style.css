@@ -31,12 +31,6 @@
     color: white;
     width: 100%;
 }
-.sidebar li{
-    width: 100%;
-}
-.sidebar a{
-    width: 100%;
-}
 .menu-button{
     display: none;
 }
@@ -86,6 +80,7 @@ span:nth-of-type(2){
     background-size: cover;
     height: 100vh;
 }
+
 nav{
     position: relative;
     top:8%;
@@ -105,6 +100,7 @@ nav{
     initial-value: 0deg;
     inherits: false;
 }
+
 .nav2{
     content:"";
     position: absolute; 
@@ -130,14 +126,13 @@ nav{
         --angle:360deg;
     }
 }
-nav a:hover{
+
+.sidebar :hover{
     background-color: rgb(33, 33, 33); 
-    color: white;
     border-radius: 10px;
 }
 
 nav img {
-    background-image: url(logo.svg);
     height: 8vh;
     margin-left:4vw ;
 }
@@ -194,12 +189,11 @@ nav img {
 .wave{
     overflow:hidden;
     position:relative;
-    margin-top: -120px;
+    margin-top: -140px;
 }
 .wave::before{ 
     content:'';
     position: absolute;
-    z-index: 99;
     pointer-events: none;
     background-repeat: no-repeat;
     bottom: -0.1vw;
@@ -207,7 +201,8 @@ nav img {
     right: -0.1vw;
     top: -0.1vw; 
     background-size: 100% 90px;
-    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" fill="%23000000"/></svg>'); 
+    background-position: 50% 100%;  
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" fill="%23000000"/></svg>'); 
 }
 
 @media (min-width:2100px){
@@ -215,6 +210,9 @@ nav img {
     background-size: 100% calc(2vw + 90px);
     }
 }
+
+
+
 
 
 
@@ -516,6 +514,75 @@ body{
 @media screen and (max-width:767px) {
 
 
+
+    .slide2{
+        display: block;
+    }
+
+    .left-box video{
+
+        margin-top: 10vw;
+        margin-left: 10vw;
+
+        width: 70vw;
+        border: 10px solid white;
+        border-radius: 10px;
+    }
+
+
+    .right-box{
+        
+        margin-top: 10vw;
+        margin-left: 10vw;
+
+
+        height: 50vw;
+        width: 70vw;
+        font-size: 4vw;
+    }
+
+
+    .right-box p{
+        margin: 5vw;
+    }
+    
+    
+    .slide3{
+        display: block;
+        gap: 1vw;
+        height: 100vh;
+        background-color: black;
+    }
+    
+    .left-box2{
+        margin-top: 0vh;
+        margin-left: 10vw;
+
+
+        height: 65vw;
+        width: 70vw;
+    
+        font-size: 4vw;
+    }
+    
+    .right-box2 img {
+        margin-top: 0vh;
+        margin-left: 10vw;
+
+        width: 70vw;
+        
+        margin-right: 4vw;
+        margin-top: 10vh;
+
+        border-radius: 10px;
+    }
+    
+    .left-box2 p{
+        margin: 5vw;
+    }
+
+
+
     /* Hamburger meny */
     .hideOnMobile{
         display:none;
@@ -558,6 +625,7 @@ body{
             0 0 40px #ff0080;
 
     }
+
 
 
 }
@@ -615,7 +683,7 @@ footer h1 {
 #lightmode_button{
     position: fixed;
     bottom: 20px;
-    z-index: 999;
+    z-index: 100;
  
     border: none; 
     outline: none; 
@@ -631,8 +699,8 @@ footer h1 {
 }
 #lightmode_button img{
     margin: -10px;
-    height: 8vh;
-    width: 4vw; 
+    height: 48px;
+    width: 48px; 
 }
 
 #lightmode_button:hover{
@@ -724,11 +792,8 @@ footer h1 {
     display: flex;
     justify-content: center;
 }
-.lightmode-navbar{
+.lightmode-real-bar{
     position: relative;
-    top:8%;
-    left: 50%;
-    translate: -50% -50%;
     width: 45vw;
     background-color: white;
     border-radius: 100px;
@@ -736,12 +801,11 @@ footer h1 {
     z-index: 1;
 
 }
-.lightmode-navbar a{
+.lightmode-real-bar a{
     color: black;
 }
-.lightmode-navbar img{
-    margin-left:-2.5vw ;
-    background-image: url(white-logo.svg);
-    height: 20vh;
-    background-size: cover;
+
+.hamburger-icon {
+    height: 6vh;
+    width: 7vw;
 }

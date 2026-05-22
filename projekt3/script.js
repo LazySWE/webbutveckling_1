@@ -90,18 +90,28 @@ function myFunction() {
   lightmode.classList.toggle("lightmode-footer");
 
   // navbar
-  var lightmode = document.querySelector("nav");
-  lightmode.classList.toggle("lightmode-navbar");
+  var lightmode = document.querySelector(".real-bar");
+  lightmode.classList.toggle("lightmode-real-bar");
   
   // navbar img
   const logo = document.querySelector(".logo img");
 
-  // kolla om lightmode är aktivt (t.ex. via navbar-klassen du redan togglar)
-  const isLightmode = document.querySelector("nav").classList.contains("lightmode-navbar");
+
+  // kolla om lightmode är aktivt
+  const isLightmode = document.querySelector(".real-bar").classList.contains("lightmode-real-bar");
+
+  // hambörjar meny till lightmode
+  const hamburger = document.querySelector(".hamburger-icon");
+
+
 
   if (isLightmode) {
-      logo.src = "white-logo.svg";
+    logo.src = "white-logo.svg";
+    hamburger.src = "hamburger-menu-lightmode.png";
   } else {
-      logo.src = "logo.svg";
+    logo.src = "logo.svg";
+    hamburger.src = "hamburger-menu-darkmode.png";
   }
+  
+
 }

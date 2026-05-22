@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 1080">
-  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 511.8 436.6">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
   <defs>
     <style>
       .st0 {
@@ -26,10 +26,10 @@
       }
     </style>
   </defs>
-  <ellipse class="st1" cx="959.21" cy="539.81" rx="68.79" ry="199.83"/>
-  <path class="st1" d="M982.01,501.37c91.97,60.67,184.47,132.81,163.55,164.52s-147.34,10.99-239.3-49.68c-91.98-60.67-149.57-135.55-128.65-167.27s112.43-8.24,204.4,52.42h0Z"/>
-  <ellipse class="st0" cx="958.56" cy="558.77" rx="215.07" ry="68.79" transform="translate(-150.91 570.02) rotate(-30.82)"/>
-  <circle class="st2" cx="805.51" cy="528.7" r="14.71"/>
-  <circle class="st2" cx="953.3" cy="558.79" r="27.36"/>
-  <circle class="st2" cx="1054.14" cy="446.6" r="14.71"/>
+  <ellipse class="st1" cx="243.6" cy="221.1" rx="68.8" ry="199.8"/>
+  <path class="st1" d="M266.4,182.6c92,60.7,184.5,132.8,163.6,164.5s-147.3,11-239.3-49.7C98.7,236.8,41.1,161.9,62,130.2s112.4-8.2,204.4,52.4h0Z"/>
+  <ellipse class="st0" cx="242.9" cy="240" rx="215.1" ry="68.8" transform="translate(-88.7 158.4) rotate(-30.8)"/>
+  <circle class="st2" cx="89.9" cy="210" r="14.7"/>
+  <circle class="st2" cx="237.7" cy="240.1" r="27.4"/>
+  <circle class="st2" cx="338.5" cy="127.9" r="14.7"/>
 </svg>
