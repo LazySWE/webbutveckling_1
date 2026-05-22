@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go Nuclear</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://api.fontshare.com/v2/css?f%5B%5D=nippo@500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=nippo@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../../lightbox2-2.11.4/dist/css/lightbox.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body>
 
@@ -21,41 +21,23 @@
         <nav>
             <!--Hamburgarmeny sidebar start-->
             <ul class="sidebar">
-                <li>
-                    <a href="#" onclick="hideSidebar()">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white">
-                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                        </svg>
-                    </a>
-                </li>
-
-                <li><a href="#home">Home</a></li>
-                <li><a href="#slide3">Reactors</a></li>
-                <li><a href="#slide4">Timeline</a></li>
+                <a onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                <a href="#home">Home</a>
+                <a href="#slide3">Reactors</a>
+                <a href="#slide4">Timeline</a>
             </ul>
             <!------------------------------->
 
             <ul class="real-bar">
-
-                <li class="logo">
+                <div class="logo">
                     <img src="logo.svg" alt="Nuclear Power logo">
-                </li>
-
-                <li class="links">
+                </div>
+                <div class="links">
                     <a class="hideOnMobile" href="#slide2">Reactor</a>
                     <a class="hideOnMobile" href="#slide3">SMR</a>
                     <a class="hideOnMobile" href="#slide4">Timeline</a>
-
-                    <a class="menu-button" href="#" onclick="showSidebar()">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            height="24px"
-                            viewBox="0 -960 960 960"
-                            width="24px"
-                            fill="white">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                        </svg>
-                    </a>
-                </li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </div>
             </ul>
         </nav>
 
@@ -248,7 +230,7 @@
 
 <script src="script.js"></script>
 
-<script>
+<script type="text/javascript">
   // This "activates" the lightbox for any element with the class 'glightbox'
   const lightbox = GLightbox({
     selector: '.glightbox'
