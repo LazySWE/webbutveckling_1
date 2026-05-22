@@ -21,15 +21,23 @@
         <nav>
             <!--Hamburgarmeny sidebar start-->
             <ul class="sidebar">
-                <a onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
-                <a href="#home">Home</a>
-                <a href="#slide3">Reactors</a>
-                <a href="#slide4">Timeline</a>
+                <li>
+                    <a href="#" onclick="hideSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#slide3">Reactors</a></li>
+                <li><a href="#slide4">Timeline</a></li>
             </ul>
             <!------------------------------->
 
             <ul class="real-bar">
-                <div class="logo">
+
+                <li class="logo">
                     <img src="logo.svg" alt="Nuclear Power logo">
                 </li>
 
@@ -240,7 +248,7 @@
 
 <script src="script.js"></script>
 
-<script type="text/javascript">
+<script>
   // This "activates" the lightbox for any element with the class 'glightbox'
   const lightbox = GLightbox({
     selector: '.glightbox'
