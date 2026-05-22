@@ -96,7 +96,8 @@ function myFunction() {
   // navbar img
   const logo = document.querySelector(".logo img");
 
-  // kolla om lightmode är aktivt (t.ex. via navbar-klassen du redan togglar)
+
+  // kolla om lightmode är aktivt
   const isLightmode = document.querySelector("nav").classList.contains("lightmode-navbar");
 
   if (isLightmode) {
