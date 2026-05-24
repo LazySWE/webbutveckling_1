@@ -508,129 +508,6 @@ body{
     inset:auto 0% 0%;
 }
 
-
-
-
-@media screen and (max-width:767px) {
-
-
-
-    .slide2{
-        display: block;
-    }
-
-    .left-box video{
-
-        margin-top: 10vw;
-        margin-left: 10vw;
-
-        width: 70vw;
-        border: 10px solid white;
-        border-radius: 10px;
-    }
-
-
-    .right-box{
-        
-        margin-top: 10vw;
-        margin-left: 10vw;
-
-
-        height: 50vw;
-        width: 70vw;
-        font-size: 4vw;
-    }
-
-
-    .right-box p{
-        margin: 5vw;
-    }
-    
-    
-    .slide3{
-        display: block;
-        gap: 1vw;
-        height: 100vh;
-        background-color: black;
-    }
-    
-    .left-box2{
-        margin-top: 0vh;
-        margin-left: 10vw;
-
-
-        height: 65vw;
-        width: 70vw;
-    
-        font-size: 4vw;
-    }
-    
-    .right-box2 img {
-        margin-top: 0vh;
-        margin-left: 10vw;
-
-        width: 70vw;
-        
-        margin-right: 4vw;
-        margin-top: 10vh;
-
-        border-radius: 10px;
-    }
-    
-    .left-box2 p{
-        margin: 5vw;
-    }
-
-
-
-    /* Hamburger meny */
-    .hideOnMobile{
-        display:none;
-    }
-    .menu-button{
-        display: block;
-    }
-    .sidebar {
-        width: 100%;
-    }
-    /* ----------------------- */
-
-
-
-    /* Wave top */
-    .wave{
-        margin-top: -100px;
-    }
-    .wave::before{
-        bottom: -3vw;
-        left: -3vw;
-        right: -3vw;
-        top: -3vw; 
-    }
-    /* ---------------------- */
-
-
-
-    .timeline_circle {
-        background: white;
-        border-radius: 50%;
-        width: 15px;
-        height: 15px;
-        position: sticky;
-        top: 50vh;
-
-        box-shadow:
-            0 0 10px white,
-            0 0 20px #ff9d00,
-            0 0 40px #ff0080;
-
-    }
-
-
-
-}
-
-
 .timeline_text img {
     margin-right: -10vw;
     width:30vw;
@@ -808,4 +685,147 @@ footer h1 {
 .hamburger-icon {
     height: 6vh;
     width: 7vw;
+}
+
+
+@media screen and (max-width:767px) {
+
+
+    .lightmode-slide2{
+        display: block;
+    }
+    .slide2{
+        display: block;
+    }
+
+    .left-box video{
+
+        margin-top: 10vw;
+        margin-left: 10vw;
+
+        width: 70vw;
+        border: 10px solid white;
+        border-radius: 10px;
+    }
+
+
+    .lightmode-left_box video{
+
+        margin-top: 10vw;
+        margin-left: 10vw;
+
+        width: 70vw;
+        border: 10px solid black;
+        border-radius: 10px;
+    }
+
+    .right-box{
+        
+        margin-top: 10vw;
+        margin-left: 10vw;
+
+
+        height: 50vw;
+        width: 70vw;
+        font-size: 4vw;
+    }
+
+
+    .right-box p{
+        margin: 5vw;
+    }
+    
+    
+    .slide3{
+        display: block;
+        gap: 1vw;
+        height: 100vh;
+        background-color: black;
+    }
+    
+    .left-box2{
+        margin-top: 0vh;
+        margin-left: 10vw;
+
+
+        height: 65vw;
+        width: 70vw;
+    
+        font-size: 4vw;
+    }
+    
+    .right-box2 img {
+        margin-top: 0vh;
+        margin-left: 10vw;
+
+        width: 70vw;
+        
+        margin-right: 4vw;
+        margin-top: 10vh;
+
+        border-radius: 10px;
+    }
+
+    .left-box2 p{
+        margin: 5vw;
+    }
+
+
+
+
+
+
+    .lightmode-slide3{
+        display: block;
+        background-color: white;
+    }
+
+
+
+
+    /* Hamburger meny */
+    .hideOnMobile{
+        display:none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    /* ----------------------- */
+
+
+
+    /* Wave top */
+    .wave{
+        margin-top: -100px;
+    }
+    .wave::before{
+        bottom: -3vw;
+        left: -3vw;
+        right: -3vw;
+        top: -3vw; 
+    }
+    /* ---------------------- */
+
+
+
+    .timeline_circle {
+        background: white;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        position: sticky;
+        top: 50vh;
+
+        box-shadow:
+            0 0 10px white,
+            0 0 20px #ff9d00,
+            0 0 40px #ff0080;
+
+    }
+
+
+
 }

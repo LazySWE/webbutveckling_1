@@ -73,7 +73,7 @@ function myFunction() {
   var lightmode = document.querySelector(".left-box");
   lightmode.classList.toggle("lightmode-left_box");
 
-  // slide2 left_box
+  // slide2 right_box
   var lightmode = document.querySelector(".right-box");
   lightmode.classList.toggle("lightmode-right_box");
 
