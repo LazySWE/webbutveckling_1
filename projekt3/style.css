@@ -687,8 +687,38 @@ footer h1 {
     width: 7vw;
 }
 
+@media screen and (max-width:750px) {
 
-@media screen and (max-width:767px) {
+
+    /* Hamburger meny */
+    .hideOnMobile{
+        display:none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    /* ----------------------- */
+
+
+    /* Wave top */
+    .wave{
+        margin-top: -100px;
+    }
+    .wave::before{
+        bottom: -3vw;
+        left: -3vw;
+        right: -3vw;
+        top: -3vw; 
+    }
+    /* ---------------------- */
+
+}
+
+
+@media screen and (max-width:534px) {
 
 
     .lightmode-slide2{
@@ -795,19 +825,6 @@ footer h1 {
     }
     /* ----------------------- */
 
-
-
-    /* Wave top */
-    .wave{
-        margin-top: -100px;
-    }
-    .wave::before{
-        bottom: -3vw;
-        left: -3vw;
-        right: -3vw;
-        top: -3vw; 
-    }
-    /* ---------------------- */
 
 
 
